@@ -13,7 +13,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
-
 <style>
 /* Base & Reset */
 html.lenis { height: auto; }
@@ -107,7 +106,7 @@ will-change: transform; animation: marquee 40s linear infinite;
         <div class="flex flex-col items-center gap-4">
             <div class="font-mono text-6xl md:text-8xl font-bold tracking-tighter" id="loader-text">0%</div>
             <div class="w-32 h-[1px] bg-gray-800 relative overflow-hidden">
-                <div class="absolute inset-0 bg-accent w-0" id="loader-progress"></div>
+                <div class="absolute inset-0 bg-[#EB3A14] w-0" id="loader-progress"></div>
             </div>
         </div>
     </div>
@@ -118,16 +117,16 @@ will-change: transform; animation: marquee 40s linear infinite;
 
     <!-- Navigation -->
     <nav class="fixed top-0 left-0 w-full px-4 md:px-6 py-5 flex justify-between items-center z-50 mix-blend-difference text-white pointer-events-none">
-        <a href="#" class="font-mono text-sm font-semibold uppercase tracking-widest hover:text-accent transition-colors pointer-events-auto">
+        <a href="#" class="font-mono text-sm font-semibold uppercase tracking-widest hover:text-[#EB3A14] transition-colors pointer-events-auto">
             Harry<br>Vu
         </a>
         <div class="flex items-center gap-4 md:gap-10 pointer-events-auto">
             <div class="hidden md:flex gap-8 bg-white/10 backdrop-blur-md px-6 py-2 rounded-full border border-white/10">
-                <a href="#work" class="font-mono text-xs uppercase tracking-widest hover:text-accent transition-colors">Work</a>
-                <a href="#about" class="font-mono text-xs uppercase tracking-widest hover:text-accent transition-colors">About</a>
-                <a href="#ai" class="font-mono text-xs uppercase tracking-widest hover:text-accent transition-colors">AI</a>
+                <a href="#work" class="font-mono text-xs uppercase tracking-widest hover:text-[#EB3A14] transition-colors">Work</a>
+                <a href="#about" class="font-mono text-xs uppercase tracking-widest hover:text-[#EB3A14] transition-colors">About</a>
+                <a href="#ai" class="font-mono text-xs uppercase tracking-widest hover:text-[#EB3A14] transition-colors">AI</a>
             </div>
-            <a href="#contact" class="bg-white text-black px-5 py-2 rounded-full font-mono text-xs font-bold uppercase tracking-widest hover:bg-accent hover:text-white transition-colors duration-200 magnetic-btn shadow-lg">
+            <a href="#contact" class="bg-white text-black px-5 py-2 rounded-full font-mono text-xs font-bold uppercase tracking-widest hover:bg-[#EB3A14] hover:text-white transition-colors duration-200 magnetic-btn shadow-lg">
                 Contact
             </a>
         </div>
@@ -146,29 +145,29 @@ will-change: transform; animation: marquee 40s linear infinite;
             <!-- Floating Status Badge -->
             <div class="mb-8 md:mb-12 flex items-center gap-3 px-4 py-1.5 rounded-full bg-white/40 backdrop-blur-md border border-white/20 shadow-sm opacity-0 hero-fade-in">
                 <div class="flex gap-1 h-3 items-center">
-                    <span class="w-1 h-full bg-accent rounded-full animate-[pulse_1s_ease-in-out_infinite]"></span>
-                    <span class="w-1 h-2/3 bg-accent rounded-full animate-[pulse_1.2s_ease-in-out_infinite]"></span>
-                    <span class="w-1 h-full bg-accent rounded-full animate-[pulse_0.8s_ease-in-out_infinite]"></span>
+                    <span class="w-1 h-full bg-[#EB3A14] rounded-full animate-[pulse_1s_ease-in-out_infinite]"></span>
+                    <span class="w-1 h-2/3 bg-[#EB3A14] rounded-full animate-[pulse_1.2s_ease-in-out_infinite]"></span>
+                    <span class="w-1 h-full bg-[#EB3A14] rounded-full animate-[pulse_0.8s_ease-in-out_infinite]"></span>
                 </div>
-                <span class="font-mono text-[10px] md:text-xs uppercase tracking-widest text-primary font-medium">Open to Work</span>
+                <span class="font-mono text-[10px] md:text-xs uppercase tracking-widest text-[#111111] font-medium">Open to Work</span>
             </div>
 
             <!-- Main Title with Split Reveal -->
-            <h1 class="text-[13vw] md:text-[10vw] leading-[0.9] font-semibold tracking-tighter text-primary uppercase mix-blend-darken flex flex-col items-center">
+            <h1 class="text-[13vw] md:text-[10vw] leading-[0.9] font-semibold tracking-tighter text-[#111111] uppercase mix-blend-darken flex flex-col items-center">
                 <div class="overflow-hidden"><span class="hero-char">Harry</span></div>
                 <div class="overflow-hidden"><span class="hero-char">Vu</span></div>
             </h1>
 
             <!-- Subtitle -->
             <div class="mt-8 md:mt-12 max-w-xl mx-auto opacity-0 hero-fade-in">
-                <p class="font-sans text-base md:text-xl text-secondary leading-relaxed text-balance">
-                    Engineering scalable web applications with <span class="text-primary font-medium">.NET</span>, <span class="text-primary font-medium">Vue.js</span>, and <span class="text-primary font-medium">AI/ML</span>.
+                <p class="font-sans text-base md:text-xl text-[#666666] leading-relaxed text-balance">
+                    Engineering scalable web applications with <span class="text-[#111111] font-medium">.NET</span>, <span class="text-[#111111] font-medium">Vue.js</span>, and <span class="text-[#111111] font-medium">AI/ML</span>.
                 </p>
             </div>
 
             <!-- CTA Buttons -->
             <div class="mt-10 md:mt-14 flex gap-4 opacity-0 hero-fade-in">
-                <button class="px-8 py-3 bg-primary text-white rounded-full font-mono text-xs font-bold uppercase tracking-widest hover:bg-accent transition-colors duration-300 magnetic-btn" onclick="document.getElementById('work').scrollIntoView({behavior: 'smooth'})">
+                <button class="px-8 py-3 bg-[#111111] text-white rounded-full font-mono text-xs font-bold uppercase tracking-widest hover:bg-[#EB3A14] transition-colors duration-300 magnetic-btn" onclick="document.getElementById('work').scrollIntoView({behavior: 'smooth'})">
                     View Work
                 </button>
                 <a href="https://github.com/HarryVu176" target="_blank" class="px-4 py-3 border border-black/10 bg-white rounded-full hover:bg-gray-100 transition-colors duration-200 magnetic-btn">
@@ -179,28 +178,28 @@ will-change: transform; animation: marquee 40s linear infinite;
 
         <!-- Scroll Indicator -->
         <div class="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-0 hero-fade-in animate-bounce">
-            <i data-lucide="arrow-down" class="w-5 h-5 text-secondary/50"></i>
+            <i data-lucide="arrow-down" class="w-5 h-5 text-[#666666]/50"></i>
         </div>
     </section>
 
     <!-- Marquee Skills -->
-    <div class="py-6 md:py-8 bg-primary text-white overflow-hidden border-y border-white/10 select-none">
+    <div class="py-6 md:py-8 bg-[#111111] text-white overflow-hidden border-y border-white/10 select-none">
         <div class="marquee-track font-mono text-xs md:text-sm uppercase tracking-[0.3em]">
-            <span class="mx-4 md:mx-8">C#</span><span class="text-accent">•</span>
-            <span class="mx-4 md:mx-8">.NET</span><span class="text-accent">•</span>
-            <span class="mx-4 md:mx-8">Vue.js</span><span class="text-accent">•</span>
-            <span class="mx-4 md:mx-8">React</span><span class="text-accent">•</span>
-            <span class="mx-4 md:mx-8">TypeScript</span><span class="text-accent">•</span>
-            <span class="mx-4 md:mx-8">Python</span><span class="text-accent">•</span>
-            <span class="mx-4 md:mx-8">Azure</span><span class="text-accent">•</span>
-            <span class="mx-4 md:mx-8">Docker</span><span class="text-accent">•</span>
-            <span class="mx-4 md:mx-8">PostgreSQL</span><span class="text-accent">•</span>
-            <span class="mx-4 md:mx-8">MongoDB</span><span class="text-accent">•</span>
-            <span class="mx-4 md:mx-8">C#</span><span class="text-accent">•</span>
-            <span class="mx-4 md:mx-8">.NET</span><span class="text-accent">•</span>
-            <span class="mx-4 md:mx-8">Vue.js</span><span class="text-accent">•</span>
-            <span class="mx-4 md:mx-8">React</span><span class="text-accent">•</span>
-            <span class="mx-4 md:mx-8">TypeScript</span><span class="text-accent">•</span>
+            <span class="mx-4 md:mx-8">C#</span><span class="text-[#EB3A14]">•</span>
+            <span class="mx-4 md:mx-8">.NET</span><span class="text-[#EB3A14]">•</span>
+            <span class="mx-4 md:mx-8">Vue.js</span><span class="text-[#EB3A14]">•</span>
+            <span class="mx-4 md:mx-8">React</span><span class="text-[#EB3A14]">•</span>
+            <span class="mx-4 md:mx-8">TypeScript</span><span class="text-[#EB3A14]">•</span>
+            <span class="mx-4 md:mx-8">Python</span><span class="text-[#EB3A14]">•</span>
+            <span class="mx-4 md:mx-8">Azure</span><span class="text-[#EB3A14]">•</span>
+            <span class="mx-4 md:mx-8">Docker</span><span class="text-[#EB3A14]">•</span>
+            <span class="mx-4 md:mx-8">PostgreSQL</span><span class="text-[#EB3A14]">•</span>
+            <span class="mx-4 md:mx-8">MongoDB</span><span class="text-[#EB3A14]">•</span>
+            <span class="mx-4 md:mx-8">C#</span><span class="text-[#EB3A14]">•</span>
+            <span class="mx-4 md:mx-8">.NET</span><span class="text-[#EB3A14]">•</span>
+            <span class="mx-4 md:mx-8">Vue.js</span><span class="text-[#EB3A14]">•</span>
+            <span class="mx-4 md:mx-8">React</span><span class="text-[#EB3A14]">•</span>
+            <span class="mx-4 md:mx-8">TypeScript</span><span class="text-[#EB3A14]">•</span>
         </div>
     </div>
 
@@ -208,7 +207,7 @@ will-change: transform; animation: marquee 40s linear infinite;
     <section id="work" class="px-4 md:px-6 py-20 md:py-32 max-w-[1800px] mx-auto">
         <div class="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24 border-b border-black/10 pb-6">
             <h2 class="text-4xl md:text-7xl font-semibold tracking-tighter uppercase">Selected Work</h2>
-            <span class="font-mono text-xs md:text-sm text-secondary mt-2 md:mt-0">(2024 — 2025)</span>
+            <span class="font-mono text-xs md:text-sm text-[#666666] mt-2 md:mt-0">(2024 — 2025)</span>
         </div>
 
         <div class="space-y-20 md:space-y-32">
@@ -219,21 +218,21 @@ will-change: transform; animation: marquee 40s linear infinite;
                     <img src="https://placehold.co/1600x1000/111/FFF?text=SmartyDeck&amp;font=playfair" alt="SmartyDeck" class="project-img w-full h-full object-cover grayscale group-hover:grayscale-0 origin-center">
                 </div>
                 <div class="lg:col-span-5 flex flex-col gap-4 md:gap-6">
-                    <div class="flex items-center gap-3 font-mono text-[10px] md:text-xs uppercase tracking-widest text-accent">
+                    <div class="flex items-center gap-3 font-mono text-[10px] md:text-xs uppercase tracking-widest text-[#EB3A14]">
                         <i data-lucide="brain" class="w-3 h-3 md:w-4 md:h-4"></i>
                         <span>AI-Powered Platform</span>
                     </div>
                     <h3 class="text-3xl md:text-5xl font-semibold tracking-tighter">SmartyDeck</h3>
-                    <p class="text-secondary text-base md:text-lg leading-relaxed">
+                    <p class="text-[#666666] text-base md:text-lg leading-relaxed">
                         AI-powered educational platform built with Nuxt.js 3, Vue.js, and MongoDB. Features microservices architecture with tRPC and Clean Architecture patterns. Utilizes Anthropic SDK (Claude) for quiz generation.
                     </p>
                     <div class="flex flex-wrap gap-2 mt-1">
-                        <span class="px-2 py-1 md:px-3 md:py-1 border border-black/10 rounded-full text-[10px] md:text-xs font-mono uppercase text-secondary bg-white">Nuxt.js</span>
-                        <span class="px-2 py-1 md:px-3 md:py-1 border border-black/10 rounded-full text-[10px] md:text-xs font-mono uppercase text-secondary bg-white">Vue.js</span>
-                        <span class="px-2 py-1 md:px-3 md:py-1 border border-black/10 rounded-full text-[10px] md:text-xs font-mono uppercase text-secondary bg-white">MongoDB</span>
-                        <span class="px-2 py-1 md:px-3 md:py-1 border border-black/10 rounded-full text-[10px] md:text-xs font-mono uppercase text-secondary bg-white">Anthropic SDK</span>
+                        <span class="px-2 py-1 md:px-3 md:py-1 border border-black/10 rounded-full text-[10px] md:text-xs font-mono uppercase text-[#666666] bg-white">Nuxt.js</span>
+                        <span class="px-2 py-1 md:px-3 md:py-1 border border-black/10 rounded-full text-[10px] md:text-xs font-mono uppercase text-[#666666] bg-white">Vue.js</span>
+                        <span class="px-2 py-1 md:px-3 md:py-1 border border-black/10 rounded-full text-[10px] md:text-xs font-mono uppercase text-[#666666] bg-white">MongoDB</span>
+                        <span class="px-2 py-1 md:px-3 md:py-1 border border-black/10 rounded-full text-[10px] md:text-xs font-mono uppercase text-[#666666] bg-white">Anthropic SDK</span>
                     </div>
-                    <a href="#" class="inline-flex items-center gap-2 text-xs md:text-sm font-semibold uppercase tracking-widest mt-2 md:mt-4 hover:text-accent transition-colors magnetic-btn group/link">
+                    <a href="#" class="inline-flex items-center gap-2 text-xs md:text-sm font-semibold uppercase tracking-widest mt-2 md:mt-4 hover:text-[#EB3A14] transition-colors magnetic-btn group/link">
                         View Project <i data-lucide="arrow-up-right" class="w-4 h-4 transition-transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5"></i>
                     </a>
                 </div>
@@ -242,19 +241,19 @@ will-change: transform; animation: marquee 40s linear infinite;
             <!-- Project 2: LBMX PIM System -->
             <div class="group project-card grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                 <div class="lg:col-span-5 flex flex-col gap-4 md:gap-6 order-2 lg:order-1">
-                    <div class="flex items-center gap-3 font-mono text-[10px] md:text-xs uppercase tracking-widest text-accent">
+                    <div class="flex items-center gap-3 font-mono text-[10px] md:text-xs uppercase tracking-widest text-[#EB3A14]">
                         <i data-lucide="database" class="w-3 h-3 md:w-4 md:h-4"></i>
                         <span>Enterprise System</span>
                     </div>
                     <h3 class="text-3xl md:text-5xl font-semibold tracking-tighter">LBMX PIM System</h3>
-                    <p class="text-secondary text-base md:text-lg leading-relaxed">
+                    <p class="text-[#666666] text-base md:text-lg leading-relaxed">
                         Product Information Management system with automated SFTP uploads and RabbitMQ messaging. Improved data processing efficiency by 40% through configurable update intervals.
                     </p>
                     <div class="flex flex-wrap gap-2 mt-1">
-                        <span class="px-2 py-1 md:px-3 md:py-1 border border-black/10 rounded-full text-[10px] md:text-xs font-mono uppercase text-secondary bg-white">C#</span>
-                        <span class="px-2 py-1 md:px-3 md:py-1 border border-black/10 rounded-full text-[10px] md:text-xs font-mono uppercase text-secondary bg-white">.NET Core</span>
-                        <span class="px-2 py-1 md:px-3 md:py-1 border border-black/10 rounded-full text-[10px] md:text-xs font-mono uppercase text-secondary bg-white">Angular</span>
-                        <span class="px-2 py-1 md:px-3 md:py-1 border border-black/10 rounded-full text-[10px] md:text-xs font-mono uppercase text-secondary bg-white">RabbitMQ</span>
+                        <span class="px-2 py-1 md:px-3 md:py-1 border border-black/10 rounded-full text-[10px] md:text-xs font-mono uppercase text-[#666666] bg-white">C#</span>
+                        <span class="px-2 py-1 md:px-3 md:py-1 border border-black/10 rounded-full text-[10px] md:text-xs font-mono uppercase text-[#666666] bg-white">.NET Core</span>
+                        <span class="px-2 py-1 md:px-3 md:py-1 border border-black/10 rounded-full text-[10px] md:text-xs font-mono uppercase text-[#666666] bg-white">Angular</span>
+                        <span class="px-2 py-1 md:px-3 md:py-1 border border-black/10 rounded-full text-[10px] md:text-xs font-mono uppercase text-[#666666] bg-white">RabbitMQ</span>
                     </div>
                 </div>
                 <div class="lg:col-span-7 overflow-hidden rounded-sm bg-gray-200 aspect-[4/3] md:aspect-[16/10] relative cursor-pointer order-1 lg:order-2">
@@ -292,11 +291,11 @@ will-change: transform; animation: marquee 40s linear infinite;
                 <div class="p-4 md:p-6 font-mono text-xs md:text-base h-[350px] md:h-[400px] flex flex-col bg-black/50 backdrop-blur-sm">
                     <div id="terminal-output" class="space-y-3 md:space-y-4 mb-2 flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-800 scrollbar-track-transparent">
                         <div class="text-green-400/90">
-                            <span class="text-accent">➜</span>  ~  System online. Try asking: "What is your experience with .NET?"
+                            <span class="text-[#EB3A14]">➜</span>  ~  System online. Try asking: "What is your experience with .NET?"
                         </div>
                     </div>
                     <div class="flex items-center gap-2 md:gap-3 pt-3 border-t border-white/10 shrink-0">
-                        <span class="text-accent">➜</span>
+                        <span class="text-[#EB3A14]">➜</span>
                         <span class="text-blue-400">~</span>
                         <input type="text" id="ai-input" class="bg-transparent border-none outline-none text-white w-full placeholder-gray-700 focus:placeholder-gray-600" placeholder="Type your question..." autocomplete="off" spellcheck="false">
                     </div>
@@ -317,45 +316,45 @@ will-change: transform; animation: marquee 40s linear infinite;
             <div class="relative">
                 <div class="md:sticky md:top-32">
                     <h2 class="text-4xl md:text-6xl font-semibold tracking-tighter uppercase mb-6 md:mb-8">Career<br>Timeline</h2>
-                    <div class="w-12 md:w-16 h-1 bg-accent mb-6 md:mb-8"></div>
-                    <p class="text-secondary text-base md:text-lg leading-relaxed">
+                    <div class="w-12 md:w-16 h-1 bg-[#EB3A14] mb-6 md:mb-8"></div>
+                    <p class="text-[#666666] text-base md:text-lg leading-relaxed">
                         Computer Science student with hands-on experience in full-stack development, enterprise systems, and AI/ML integration. Passionate about building scalable solutions and optimizing performance.
                     </p>
-                    <div class="mt-8 md:mt-12 p-5 md:p-6 bg-background rounded-lg border border-black/5">
-                        <h4 class="font-mono text-[10px] md:text-xs uppercase tracking-widest text-accent mb-3">Education</h4>
+                    <div class="mt-8 md:mt-12 p-5 md:p-6 bg-[#F5F5F5] rounded-lg border border-black/5">
+                        <h4 class="font-mono text-[10px] md:text-xs uppercase tracking-widest text-[#EB3A14] mb-3">Education</h4>
                         <p class="font-semibold text-sm md:text-base">B.Sc. Honours - Computer Science (GPA 3.8/4.0)</p>
-                        <p class="text-xs md:text-sm text-secondary">Western University, London, ON</p>
-                        <p class="font-semibold text-sm md:text-base mt-3">Diploma - Computer Programming & Analysis (GPA 4.1/4.2)</p>
-                        <p class="text-xs md:text-sm text-secondary">Fanshawe College, London, ON</p>
+                        <p class="text-xs md:text-sm text-[#666666]">Western University, London, ON</p>
+                        <p class="font-semibold text-sm md:text-base mt-3">Diploma - Computer Programming &amp; Analysis (GPA 4.1/4.2)</p>
+                        <p class="text-xs md:text-sm text-[#666666]">Fanshawe College, London, ON</p>
                     </div>
                 </div>
             </div>
 
             <div class="space-y-12 md:space-y-16 border-l border-black/10 pl-6 md:pl-12 mt-4 md:mt-0">
                 <div class="relative group">
-                    <div class="absolute -left-[1.95rem] md:-left-[3.25rem] top-1.5 md:top-2 w-2.5 h-2.5 md:w-3 md:h-3 bg-white border-2 border-accent rounded-full z-10 group-hover:bg-accent transition-colors"></div>
+                    <div class="absolute -left-[1.95rem] md:-left-[3.25rem] top-1.5 md:top-2 w-2.5 h-2.5 md:w-3 md:h-3 bg-white border-2 border-[#EB3A14] rounded-full z-10 group-hover:bg-[#EB3A14] transition-colors"></div>
                     <h3 class="text-xl md:text-2xl font-semibold tracking-tight">Software Engineer Intern</h3>
-                    <p class="font-mono text-xs md:text-sm text-accent mt-1 mb-3 uppercase tracking-wider">LBMX / May 2025 — Aug 2025</p>
-                    <ul class="space-y-2 text-secondary list-disc pl-4 text-sm md:text-base marker:text-gray-300">
+                    <p class="font-mono text-xs md:text-sm text-[#EB3A14] mt-1 mb-3 uppercase tracking-wider">LBMX / May 2025 — Aug 2025</p>
+                    <ul class="space-y-2 text-[#666666] list-disc pl-4 text-sm md:text-base marker:text-gray-300">
                         <li>Migrated legacy .NET Core codebase into modular repo with clear service boundaries.</li>
                         <li>Implemented fine-grained authorization with policy-based RBAC.</li>
                         <li>Improved request latency by 90% through optimized LINQ and Dictionary caching.</li>
                     </ul>
                 </div>
                 <div class="relative group">
-                    <div class="absolute -left-[1.95rem] md:-left-[3.25rem] top-1.5 md:top-2 w-2.5 h-2.5 md:w-3 md:h-3 bg-white border-2 border-gray-300 rounded-full z-10 group-hover:border-accent transition-colors"></div>
+                    <div class="absolute -left-[1.95rem] md:-left-[3.25rem] top-1.5 md:top-2 w-2.5 h-2.5 md:w-3 md:h-3 bg-white border-2 border-gray-300 rounded-full z-10 group-hover:border-[#EB3A14] transition-colors"></div>
                     <h3 class="text-xl md:text-2xl font-semibold tracking-tight">Software Engineer Intern</h3>
-                    <p class="font-mono text-xs md:text-sm text-secondary mt-1 mb-3 uppercase tracking-wider">LBMX / Sep 2024 — Dec 2024</p>
-                    <ul class="space-y-2 text-secondary list-disc pl-4 text-sm md:text-base marker:text-gray-300">
+                    <p class="font-mono text-xs md:text-sm text-[#666666] mt-1 mb-3 uppercase tracking-wider">LBMX / Sep 2024 — Dec 2024</p>
+                    <ul class="space-y-2 text-[#666666] list-disc pl-4 text-sm md:text-base marker:text-gray-300">
                         <li>Developed automated SFTP upload interface and email notifications in PIM system.</li>
                         <li>Leveraged RabbitMQ for automated product ingestion, improving efficiency by 40%.</li>
                     </ul>
                 </div>
                 <div class="relative group">
-                    <div class="absolute -left-[1.95rem] md:-left-[3.25rem] top-1.5 md:top-2 w-2.5 h-2.5 md:w-3 md:h-3 bg-white border-2 border-gray-300 rounded-full z-10 group-hover:border-accent transition-colors"></div>
+                    <div class="absolute -left-[1.95rem] md:-left-[3.25rem] top-1.5 md:top-2 w-2.5 h-2.5 md:w-3 md:h-3 bg-white border-2 border-gray-300 rounded-full z-10 group-hover:border-[#EB3A14] transition-colors"></div>
                     <h3 class="text-xl md:text-2xl font-semibold tracking-tight">AI/ML Software Engineer Intern</h3>
-                    <p class="font-mono text-xs md:text-sm text-secondary mt-1 mb-3 uppercase tracking-wider">LenzVU (Tribute Kiosk) / Jan 2024 — Jun 2024</p>
-                    <ul class="space-y-2 text-secondary list-disc pl-4 text-sm md:text-base marker:text-gray-300">
+                    <p class="font-mono text-xs md:text-sm text-[#666666] mt-1 mb-3 uppercase tracking-wider">LenzVU (Tribute Kiosk) / Jan 2024 — Jun 2024</p>
+                    <ul class="space-y-2 text-[#666666] list-disc pl-4 text-sm md:text-base marker:text-gray-300">
                         <li>Led integration of Azure Library, Langchain and spaCy NLP into CRM suite.</li>
                         <li>Developed information retrieval system using Azure AI Search and Vector Databases.</li>
                         <li>Reduced response times by 20% while boosting accuracy.</li>
@@ -368,27 +367,27 @@ will-change: transform; animation: marquee 40s linear infinite;
     <!-- Awards Section -->
     <section class="px-4 md:px-6 py-16 md:py-24 bg-[#F5F5F5]">
         <div class="max-w-[1200px] mx-auto">
-            <h2 class="text-3xl md:text-5xl font-semibold tracking-tighter uppercase mb-10 md:mb-16 text-center">Awards & Recognition</h2>
+            <h2 class="text-3xl md:text-5xl font-semibold tracking-tighter uppercase mb-10 md:mb-16 text-center">Awards &amp; Recognition</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="p-6 bg-white rounded-lg border border-black/5 hover:shadow-lg transition-shadow">
-                    <div class="text-accent font-mono text-xs uppercase tracking-widest mb-2">2025</div>
+                    <div class="text-[#EB3A14] font-mono text-xs uppercase tracking-widest mb-2">2025</div>
                     <h4 class="font-semibold text-lg mb-1">Best Beginner Hack</h4>
-                    <p class="text-secondary text-sm">UdeMHacks 2025, Montréal</p>
+                    <p class="text-[#666666] text-sm">UdeMHacks 2025, Montréal</p>
                 </div>
                 <div class="p-6 bg-white rounded-lg border border-black/5 hover:shadow-lg transition-shadow">
-                    <div class="text-accent font-mono text-xs uppercase tracking-widest mb-2">2023</div>
+                    <div class="text-[#EB3A14] font-mono text-xs uppercase tracking-widest mb-2">2023</div>
                     <h4 class="font-semibold text-lg mb-1">1st Place</h4>
-                    <p class="text-secondary text-sm">Fanshawe Annual Programming Contest</p>
+                    <p class="text-[#666666] text-sm">Fanshawe Annual Programming Contest</p>
                 </div>
                 <div class="p-6 bg-white rounded-lg border border-black/5 hover:shadow-lg transition-shadow">
-                    <div class="text-accent font-mono text-xs uppercase tracking-widest mb-2">2020</div>
+                    <div class="text-[#EB3A14] font-mono text-xs uppercase tracking-widest mb-2">2020</div>
                     <h4 class="font-semibold text-lg mb-1">3rd Place</h4>
-                    <p class="text-secondary text-sm">Hour of Code, Banting Secondary School</p>
+                    <p class="text-[#666666] text-sm">Hour of Code, Banting Secondary School</p>
                 </div>
                 <div class="p-6 bg-white rounded-lg border border-black/5 hover:shadow-lg transition-shadow">
-                    <div class="text-accent font-mono text-xs uppercase tracking-widest mb-2">2017</div>
+                    <div class="text-[#EB3A14] font-mono text-xs uppercase tracking-widest mb-2">2017</div>
                     <h4 class="font-semibold text-lg mb-1">3rd Place</h4>
-                    <p class="text-secondary text-sm">Hanoi City Excellent Student in Informatics</p>
+                    <p class="text-[#666666] text-sm">Hanoi City Excellent Student in Informatics</p>
                 </div>
             </div>
         </div>
@@ -397,17 +396,17 @@ will-change: transform; animation: marquee 40s linear infinite;
     <!-- Contact Section -->
     <section id="contact" class="px-4 md:px-6 py-20 md:py-40 bg-[#F5F5F5] border-t border-black/5">
         <div class="max-w-[1200px] mx-auto text-center">
-            <p class="font-mono text-[10px] md:text-xs uppercase tracking-[0.3em] text-accent mb-6">Status: Available</p>
-            <h2 class="text-5xl md:text-9xl font-semibold tracking-tighter uppercase mb-10 md:mb-12 leading-none text-primary">
+            <p class="font-mono text-[10px] md:text-xs uppercase tracking-[0.3em] text-[#EB3A14] mb-6">Status: Available</p>
+            <h2 class="text-5xl md:text-9xl font-semibold tracking-tighter uppercase mb-10 md:mb-12 leading-none text-[#111111]">
                 Let's Work<br>Together
             </h2>
             
             <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-12">
-                <a href="mailto:harryvu176@gmail.com" class="group flex items-center gap-3 text-lg md:text-2xl font-mono border-b border-black/20 pb-1 hover:border-accent hover:text-accent transition-all">
+                <a href="mailto:harryvu176@gmail.com" class="group flex items-center gap-3 text-lg md:text-2xl font-mono border-b border-black/20 pb-1 hover:border-[#EB3A14] hover:text-[#EB3A14] transition-all">
                     <i data-lucide="mail" class="w-4 h-4 md:w-5 md:h-5"></i>
                     <span>harryvu176@gmail.com</span>
                 </a>
-                <a href="tel:+12265039186" class="group flex items-center gap-3 text-lg md:text-2xl font-mono border-b border-black/20 pb-1 hover:border-accent hover:text-accent transition-all">
+                <a href="tel:+12265039186" class="group flex items-center gap-3 text-lg md:text-2xl font-mono border-b border-black/20 pb-1 hover:border-[#EB3A14] hover:text-[#EB3A14] transition-all">
                     <i data-lucide="phone" class="w-4 h-4 md:w-5 md:h-5"></i>
                     <span>+1 (226) 503-9186</span>
                 </a>
@@ -415,22 +414,22 @@ will-change: transform; animation: marquee 40s linear infinite;
 
             <div class="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 text-center md:text-left border-t border-black/5 pt-12">
                 <div>
-                    <h4 class="font-mono text-[10px] uppercase text-secondary mb-3">Socials</h4>
-                    <a href="https://linkedin.com/in/harryvu176" target="_blank" class="block text-sm md:text-base font-medium hover:text-accent transition-colors mb-1">LinkedIn</a>
-                    <a href="https://github.com/HarryVu176" target="_blank" class="block text-sm md:text-base font-medium hover:text-accent transition-colors">GitHub</a>
+                    <h4 class="font-mono text-[10px] uppercase text-[#666666] mb-3">Socials</h4>
+                    <a href="https://linkedin.com/in/harryvu176" target="_blank" class="block text-sm md:text-base font-medium hover:text-[#EB3A14] transition-colors mb-1">LinkedIn</a>
+                    <a href="https://github.com/HarryVu176" target="_blank" class="block text-sm md:text-base font-medium hover:text-[#EB3A14] transition-colors">GitHub</a>
                 </div>
                 <div>
-                    <h4 class="font-mono text-[10px] uppercase text-secondary mb-3">Location</h4>
+                    <h4 class="font-mono text-[10px] uppercase text-[#666666] mb-3">Location</h4>
                     <p class="text-sm md:text-base font-medium">London, ON, Canada</p>
-                    <p class="text-sm md:text-base font-medium text-secondary">Remote (Global)</p>
+                    <p class="text-sm md:text-base font-medium text-[#666666]">Remote (Global)</p>
                 </div>
                 <div>
-                     <h4 class="font-mono text-[10px] uppercase text-secondary mb-3">Stack</h4>
+                     <h4 class="font-mono text-[10px] uppercase text-[#666666] mb-3">Stack</h4>
                     <p class="text-sm md:text-base font-medium">.NET / Vue.js</p>
                     <p class="text-sm md:text-base font-medium">React / Node.js</p>
                 </div>
                  <div class="col-span-2 md:col-span-1 flex items-end justify-center md:justify-end mt-4 md:mt-0">
-                    <button class="w-10 h-10 md:w-12 md:h-12 border border-black/10 bg-white rounded-full flex items-center justify-center hover:bg-accent hover:text-white transition-colors" onclick="lenis.scrollTo(0)">
+                    <button class="w-10 h-10 md:w-12 md:h-12 border border-black/10 bg-white rounded-full flex items-center justify-center hover:bg-[#EB3A14] hover:text-white transition-colors" onclick="lenis.scrollTo(0)">
                         <i data-lucide="arrow-up" class="w-5 h-5"></i>
                     </button>
                 </div>
@@ -438,7 +437,7 @@ will-change: transform; animation: marquee 40s linear infinite;
         </div>
     </section>
 
-    <footer class="bg-primary py-6 text-center">
+    <footer class="bg-[#111111] py-6 text-center">
         <p class="font-mono text-[10px] text-white/40 uppercase tracking-widest">© 2025 Harry Vu. Designed with code.</p>
     </footer>
 
@@ -558,11 +557,12 @@ will-change: transform; animation: marquee 40s linear infinite;
             else if(lCmd.includes('skill')) resp = "Languages: Java, Python, C/C++, JavaScript, C#. Frameworks: React, Vue.js, .NET, Spring Boot, Node.js. Cloud: Azure, AWS, GCP.";
             else if(lCmd.includes('contact')||lCmd.includes('email')) resp = "Email: harryvu176@gmail.com | Phone: +1 (226) 503-9186 | LinkedIn: linkedin.com/in/harryvu176";
             else if(lCmd.includes('education')||lCmd.includes('school')) resp = "B.Sc. Computer Science at Western University (GPA 3.8/4.0). Diploma in Computer Programming at Fanshawe College (GPA 4.1/4.2).";
-            termOut.innerHTML += `<div class="text-gray-200 border-l-2 border-accent pl-3 py-1">${resp}</div>`; termOut.scrollTop = termOut.scrollHeight;
+            termOut.innerHTML += `<div class="text-gray-200 border-l-2 border-[#EB3A14] pl-3 py-1">${resp}</div>`; termOut.scrollTop = termOut.scrollHeight;
         }
         aiInput.addEventListener('keydown', e => { if(e.key==='Enter' && aiInput.value.trim()) { handleCommand(aiInput.value.trim()); aiInput.value = ''; } });
         document.querySelectorAll('.quick-prompt').forEach(btn => {
             btn.addEventListener('click', () => handleCommand(btn.innerText.replace(/"/g, '')));
         });
     </script>
+
 </body></html>
